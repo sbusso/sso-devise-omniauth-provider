@@ -10,9 +10,9 @@ OauthProviderDemo::Application.routes.draw do
   match '/auth/failure', :to => 'authentications#failure'
 
   # Provider stuff
-  match '/auth/josh_id/authorize' => 'auth#authorize'
-  match '/auth/josh_id/access_token' => 'auth#access_token'
-  match '/auth/josh_id/user' => 'auth#user'
+  match '/auth/client_app/authorize' => 'auth#authorize'
+  match '/auth/client_app/access_token' => 'auth#access_token'
+  match '/auth/client_app/user' => 'auth#user'
   match '/oauth/token' => 'auth#access_token'
 
   # Account linking

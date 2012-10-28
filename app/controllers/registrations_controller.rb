@@ -1,4 +1,8 @@
 class RegistrationsController < Devise::RegistrationsController
+  layout "sign_up"
+
+  #before_filter :save_referrer, :only => :edit
+
   def new
      # Building the resource with information that MAY BE available from omniauth!
      build_resource(:first_name => session[:omniauth] && session[:omniauth]['user_info'] && session[:omniauth]['user_info']['first_name'],

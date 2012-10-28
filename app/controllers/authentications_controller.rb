@@ -1,4 +1,5 @@
 class AuthenticationsController < ApplicationController
+  layout "sign_up"
   before_filter :authenticate_user!, :except => [:create, :link, :add]
 
   def index
@@ -34,7 +35,7 @@ class AuthenticationsController < ApplicationController
   # TODO: Account linking. Example, if a user has signed in via twitter using the
   # email abc@xyz.com and then signs in via Facebook with the same id, we should
   # link these 2 accounts. Since, we already have Authentication model in place,
-  # user should be asked for login credentials and then teh new authentication should 
+  # user should be asked for login credentials and then teh new authentication should
   # be linked.
   # (Gautam)
   def create
