@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'psych'
-gem 'rails', '3.2.6'
+gem 'rails', '3.2.8'
 gem 'pg'
 
 # asset pipeline
