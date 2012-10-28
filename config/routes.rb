@@ -1,4 +1,8 @@
 OauthProviderDemo::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   devise_for :users, :controllers => { :registrations => 'registrations',
                                        :sessions => 'sessions'}
   # omniauth client stuff

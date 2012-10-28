@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
+gem 'psych'
 gem 'rails', '3.2.6'
-gem 'sqlite3'
-gem 'mysql2'
+gem 'pg'
 
 # asset pipeline
 group :assets do
@@ -16,3 +16,5 @@ gem 'jquery-rails'
 # gems for omniauth and devise
 gem 'devise'
 gem 'omniauth'
+
+gem 'activeadmin'
