@@ -18,3 +18,4 @@ gem 'devise'
 gem 'omniauth'
 
 gem 'activeadmin'
+gem 'ui_datepicker-rails3'
